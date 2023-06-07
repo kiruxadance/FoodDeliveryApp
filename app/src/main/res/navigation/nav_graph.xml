@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="ru.kiruxadance.feature_food_category_list.presentation.FoodCategoriesFragment"
+        android:label="FoodCategoriesFragment" >
+        <action
+            android:id="@+id/action_navigation_home_to_foodDishesFragment"
+            app:destination="@id/foodDishesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="ru.kiruxadance.feature_account.presentation.AccountFragment"
+        android:label="AccountFragment" />
+    <fragment
+        android:id="@+id/navigation_basket"
+        android:name="ru.kiruxadance.feature_food_basket.presentation.FoodBasketFragment"
+        android:label="FoodBasketFragment" />
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="ru.kiruxadance.feature_food_search.presentation.FoodSearchFragment"
+        android:label="FoodSearchFragment" />
+    <fragment
+        android:id="@+id/foodDishesFragment"
+        android:name="ru.kiruxadance.feature_food_category_details.presentation.FoodDishesFragment"
+        android:label="FoodDishesFragment" />
+</navigation>

@@ -1,0 +1,70 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    namespace 'ru.kiruxadance.fooddeliveryapp'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "ru.kiruxadance.fooddeliveryapp"
+        minSdk 28
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation project(":feature_food_category_list:presentation")
+    implementation project(":feature_food_category_list:data")
+    implementation project(":feature_food_category_list:domain")
+
+    implementation project(":feature_food_category_details:presentation")
+    implementation project(":feature_food_category_details:data")
+    implementation project(":feature_food_category_details:domain")
+
+    implementation project(":feature_food_search:presentation")
+
+    implementation project(":feature_food_basket:presentation")
+
+    implementation project(":feature_account:presentation")
+
+    implementation AndroidX.coreKTX
+    implementation AndroidX.lifecycleRuntimeKTX
+    implementation AndroidX.appCompat
+    implementation AndroidX.constraintLayout
+    implementation AndroidX.navigationFragment
+    implementation AndroidX.navigationUIKtx
+    implementation Material.materialCore
+
+    implementation DaggerHilt.core
+    kapt DaggerHilt.compiler
+    kapt DaggerHilt.androidXCompiler
+
+    testImplementation TestImplementation.junit
+    androidTestImplementation AndroidTestImplementation.junit
+    androidTestImplementation AndroidTestImplementation.espresso
+}

@@ -1,0 +1,34 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "FoodDeliveryApp"
+include ':app'
+include ':core'
+include ':core:common'
+include ':core:network'
+include ':feature_food_category_list'
+include ':feature_food_category_list:data'
+include ':feature_food_category_list:domain'
+include ':feature_food_category_list:presentation'
+include ':core:feature_api'
+include ':feature_food_search'
+include ':feature_food_search:presentation'
+include ':feature_food_basket'
+include ':feature_food_basket:presentation'
+include ':feature_account'
+include ':feature_account:presentation'
+include ':feature_food_category_details'
+include ':feature_food_category_details:data'
+include ':feature_food_category_details:domain'
+include ':feature_food_category_details:presentation'
