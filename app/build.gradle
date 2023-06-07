@@ -52,6 +52,8 @@ dependencies {
 
     implementation project(":feature_account:presentation")
 
+    implementation project(":navigation")
+
     implementation AndroidX.coreKTX
     implementation AndroidX.lifecycleRuntimeKTX
     implementation AndroidX.appCompat

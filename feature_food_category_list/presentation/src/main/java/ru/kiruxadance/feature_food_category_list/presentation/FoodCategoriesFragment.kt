@@ -52,7 +52,7 @@ class FoodCategoriesFragment : Fragment() {
                         val adapter = FoodCategoriesRecyclerAdapter(it)
                         adapter.setOnItemClickListener(object : FoodCategoriesRecyclerAdapter.OnItemClickListener{
                             override fun onItemClick(position: Int) {
-                                
+                                findNavController().navigate(ru.kiruxadance.navigation.R.id.action_navigation_home_to_foodDishesFragment)
                             }
                         })
                         binding.foodCategoriesRecyclerView.adapter = adapter

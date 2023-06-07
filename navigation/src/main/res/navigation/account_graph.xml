@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/account_graph"
+    app:startDestination="@id/navigation_account">
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="ru.kiruxadance.feature_account.presentation.AccountFragment"
+        android:label="AccountFragment" />
+
+</navigation>

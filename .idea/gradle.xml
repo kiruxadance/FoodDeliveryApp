@@ -30,6 +30,7 @@
             <option value="$PROJECT_DIR$/feature_food_category_list/presentation" />
             <option value="$PROJECT_DIR$/feature_food_search" />
             <option value="$PROJECT_DIR$/feature_food_search/presentation" />
+            <option value="$PROJECT_DIR$/navigation" />
           </set>
         </option>
       </GradleProjectSettings>
