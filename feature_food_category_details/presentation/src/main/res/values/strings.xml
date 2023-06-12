@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Title">Азиатская кухня</string>
+    <string name="chip_all_menu">Все меню</string>
+    <string name="chip_salads">Салаты</string>
+    <string name="chip_with_rice">С рисом</string>
+    <string name="chip_with_fish">С рыбой</string>
+</resources>

@@ -7,6 +7,15 @@
     <fragment
         android:id="@+id/navigation_basket"
         android:name="ru.kiruxadance.feature_food_basket.presentation.FoodBasketFragment"
-        android:label="FoodBasketFragment" />
+        android:label="FoodBasketFragment" >
+        <action
+            android:id="@+id/action_navigation_basket_to_foodDetailDialogFragment"
+            app:destination="@id/foodDetailDialogFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/foodDetailDialogFragment"
+        android:name="ru.kiruxadance.feature_food_detail.presentation.FoodDetailDialogFragment"
+        android:label="FoodDetailDialogFragment"/>
 
 </navigation>

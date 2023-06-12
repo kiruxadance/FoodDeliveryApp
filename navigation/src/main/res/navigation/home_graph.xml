@@ -14,5 +14,13 @@
     <fragment
         android:id="@+id/foodDishesFragment"
         android:name="ru.kiruxadance.feature_food_category_details.presentation.FoodDishesFragment"
-        android:label="FoodDishesFragment" />
+        android:label="FoodDishesFragment" >
+        <action
+            android:id="@+id/action_foodDishesFragment_to_foodDetailDialogFragment"
+            app:destination="@id/foodDetailDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/foodDetailDialogFragment"
+        android:name="ru.kiruxadance.feature_food_detail.presentation.FoodDetailDialogFragment"
+        android:label="FoodDetailDialogFragment"/>
 </navigation>

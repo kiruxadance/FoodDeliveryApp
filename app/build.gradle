@@ -49,8 +49,14 @@ dependencies {
     implementation project(":feature_food_search:presentation")
 
     implementation project(":feature_food_basket:presentation")
+    implementation project(":feature_food_basket:data")
+    implementation project(":feature_food_basket:domain")
 
     implementation project(":feature_account:presentation")
+
+    implementation project(":feature_food_detail:presentation")
+    implementation project(":feature_food_detail:data")
+    implementation project(":feature_food_detail:domain")
 
     implementation project(":navigation")
 

@@ -14,11 +14,14 @@
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/core/common" />
+            <option value="$PROJECT_DIR$/core/database" />
             <option value="$PROJECT_DIR$/core/feature_api" />
             <option value="$PROJECT_DIR$/core/network" />
             <option value="$PROJECT_DIR$/feature_account" />
             <option value="$PROJECT_DIR$/feature_account/presentation" />
             <option value="$PROJECT_DIR$/feature_food_basket" />
+            <option value="$PROJECT_DIR$/feature_food_basket/data" />
+            <option value="$PROJECT_DIR$/feature_food_basket/domain" />
             <option value="$PROJECT_DIR$/feature_food_basket/presentation" />
             <option value="$PROJECT_DIR$/feature_food_category_details" />
             <option value="$PROJECT_DIR$/feature_food_category_details/data" />
@@ -28,6 +31,10 @@
             <option value="$PROJECT_DIR$/feature_food_category_list/data" />
             <option value="$PROJECT_DIR$/feature_food_category_list/domain" />
             <option value="$PROJECT_DIR$/feature_food_category_list/presentation" />
+            <option value="$PROJECT_DIR$/feature_food_detail" />
+            <option value="$PROJECT_DIR$/feature_food_detail/data" />
+            <option value="$PROJECT_DIR$/feature_food_detail/domain" />
+            <option value="$PROJECT_DIR$/feature_food_detail/presentation" />
             <option value="$PROJECT_DIR$/feature_food_search" />
             <option value="$PROJECT_DIR$/feature_food_search/presentation" />
             <option value="$PROJECT_DIR$/navigation" />

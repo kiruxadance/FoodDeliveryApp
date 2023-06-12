@@ -37,6 +37,15 @@ android {
 
 dependencies {
 
+    implementation project(":feature_food_basket:domain")
+    implementation project(":core:common")
+
+    implementation project(":navigation")
+
+    implementation 'com.google.code.gson:gson:2.9.0'
+
+    implementation "io.coil-kt:coil:2.4.0"
+
     implementation AndroidX.coreKTX
     implementation AndroidX.lifecycleRuntimeKTX
     implementation AndroidX.appCompat
@@ -44,6 +53,8 @@ dependencies {
     implementation AndroidX.navigationFragment
     implementation AndroidX.navigationUIKtx
     implementation Material.materialCore
+
+    implementation CircleImageView.circleImageView
 
     implementation DaggerHilt.core
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'

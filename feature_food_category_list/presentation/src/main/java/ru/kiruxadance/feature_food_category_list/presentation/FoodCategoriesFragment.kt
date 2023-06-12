@@ -41,7 +41,7 @@ class FoodCategoriesFragment : Fragment() {
             viewModel.foodCategoryList.collectLatest {
                 it?.let {
                     if (it.isLoading) {
-
+                        showLoading()
                     }
 
                     if (it.error.isNotBlank()) {
@@ -56,6 +56,7 @@ class FoodCategoriesFragment : Fragment() {
                             }
                         })
                         binding.foodCategoriesRecyclerView.adapter = adapter
+                        showData()
                     }
                 }
             }
@@ -63,6 +64,15 @@ class FoodCategoriesFragment : Fragment() {
 
     }
 
+    private fun showLoading() {
+        binding.progressBar.visibility = View.VISIBLE
+        binding.data.visibility = View.GONE
+    }
+
+    private fun showData() {
+        binding.progressBar.visibility = View.GONE
+        binding.data.visibility = View.VISIBLE
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()
